@@ -1,3 +1,20 @@
+# Commands to install [**IronFish node**](https://github.com/TheHolyCryptoGuardian/IronFish/blob/main/Node)
+
+Use `wget -q -O ironfish.sh https://raw.githubusercontent.com/TheHolyCryptoGuardian/IronFish/main/Node.sh && chmod +x ironfish.sh && sudo /bin/bash ironfish.sh` to install the node quickly.
+
+Use `journalctl -u ironfishd -f` to check node logs.
+
+Use `systemctl restart ironfishd` to restart the node.
+
+Use `service ironfishd stop` to stop the node.
+
+Use `ironfish config:set enableTelemetry true` to enable telemetry.
+
+Use `ironfish status -f` to check node status.
+
+Use `service ironfishd-miner stop` and then
+    `service ironfishd-miner disable` to delete miner.
+
 # IronFish
 
 Iron Fish is a decentralized, proof-of-work (PoW) based, censorship-resistant, and publicly accessible blockchain project. It is designed to support strong privacy guarantees on every transaction. Similarly to how the invention of the SSL/TLS layer in the '90s paved the way to e-commerce and benefited countless industries, we believe that privacy is a fundamental requirement to protect the user and expand the use of cryptocurrency.
@@ -17,20 +34,3 @@ Popular cryptocurrencies like Bitcoin, Ethereum, and others are the least privat
 There is huge untapped potential here — but only if users feel truly protected by their cryptocurrency, and are able to access it. Just like the introduction of SSL/TLS in the '90s opened up the floodgates to e-commerce (the predecessors of HTTPS), we believe that an accessible privacy coin will lead to a new class of industries of borderless products and companies.
 
 In this paper, we cover how Iron Fish works, and why we’ve built it this way. While we endeavor to explain things as much as possible and go over all relevant terminology, some parts will require a basic understanding of elliptic curve cryptography.
-
-# Commands to install [**IronFish node**](https://github.com/TheHolyCryptoGuardian/IronFish/blob/main/Node)
-
-Use `wget -q -O ironfish.sh https://raw.githubusercontent.com/TheHolyCryptoGuardian/IronFish/main/Node && chmod +x ironfish.sh && sudo /bin/bash ironfish.sh` to install the node quickly.
-
-Use `journalctl -u ironfishd -f` to check node logs.
-
-Use `systemctl restart ironfishd` to restart the node.
-
-Use `service ironfishd stop` to stop the node.
-
-Use `ironfish config:set enableTelemetry true` to enable telemetry.
-
-Use `ironfish status -f` to check node status.
-
-Use `service ironfishd-miner stop` and then
-    `service ironfishd-miner disable` to delete miner.
